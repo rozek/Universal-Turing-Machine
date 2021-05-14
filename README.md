@@ -1,4 +1,4 @@
-# Simulating Universal Turing-Machines #
+# Simulating Universal Turing Machines #
 
 This repository contains any material required to run the "Universal Turing Machine" published by Marvin Minsky in "Computation: Finite and Infinite Machines. Englewood Cliffs, N.J.: Prentice-Hall, 1967" using Martin Ugarte's "[Turing Machine Simulator](https://turingmachinesimulator.com/)"
 
