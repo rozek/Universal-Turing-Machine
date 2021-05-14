@@ -1,0 +1,481 @@
+name: Universal Turing Machine (by Marvin Minsky)
+// see https://github.com/intrinsic-propensity/turing-machine
+init: qPrePre
+accept: q0
+
+  qPrePre,0
+  qPrePre,0,>
+
+  qPrePre,1
+  qPrePre,1,>
+
+  qPrePre,A
+  qPrePre,A,>
+
+  qPrePre,B
+  qPrePre,B,>
+
+  qPrePre,M
+  qPrePre,M,>
+
+  qPrePre,S
+  qPre,S,>
+
+  qPrePre,Y
+  qPrePre,Y,>
+
+  qPrePre,X
+  qPrePre,X,>
+
+
+  qPre,0
+  qPre,0,>
+
+  qPre,1
+  qPre,1,>
+
+  qPre,A
+  qPre,A,>
+
+  qPre,B
+  qPre,B,>
+
+  qPre,M
+  qPre,M,>
+
+  qPre,S
+  qPre,S,>
+
+  qPre,Y
+  qPre,Y,>
+
+  qPre,X
+  q6,X,<
+
+// transitions mentioned in the diagram
+
+  q1,0
+  q3,A,<
+
+  q1,1
+  q4,B,>
+
+  q2,A
+  q1,0,>
+
+  q2,B
+  q5,1,>
+
+  q2,X
+  q7,X,>
+
+  q3,Y
+  q2,Y,>
+
+  q4,X
+  q6,X,<
+
+  q4,Y
+  q0,Y,-
+
+  q5,0
+  q4,A,>
+
+  q5,1
+  q3,B,<
+
+  q6,0
+  q6,A,<
+
+  q6,1
+  q6,B,<
+
+  q6,Y
+  q2,Y,>
+
+  q7,0
+  q9,A,<
+
+  q7,1
+  q8,B,<
+
+  q8,Y
+  q10,Y,>
+
+  q9,Y
+  q11,Y,>
+
+  q10,0
+  q12,B,>
+
+  q10,1
+  q12,B,>
+
+  q10,X
+  q13,X,<
+
+  q11,0
+  q12,A,>
+
+  q11,1
+  q12,A,>
+
+  q11,X
+  q14,X,<
+
+  q12,X
+  q7,X,>
+
+  q13,M
+  q15,B,>
+
+  q14,M
+  q15,A,>
+
+  q15,A
+  q15,0,>
+
+  q15,B
+  q15,1,>
+
+  q15,X
+  q16,X,>
+
+  q16,0
+  q17,0,<
+
+  q16,1
+  q17,1,<
+
+  q17,0
+  q22,S,<
+
+  q17,1
+  q23,S,<
+
+  q17,A
+  q17,0,<
+
+  q17,B
+  q17,1,<
+
+  q18,S
+  q6,A,<
+
+  q19,S
+  q6,B,<
+
+  q20,0
+  q18,M,>
+
+  q20,1
+  q19,M,>
+
+  q21,0
+  q18,M,>
+
+  q21,1
+  q19,M,>
+
+  q22,A
+  q21,0,<
+
+  q22,B
+  q20,1,>
+
+  q23,A
+  q21,1,<
+
+  q23,B
+  q20,1,>
+
+// important transitions not mentioned in the diagram but implicitly being
+// part of Marvin Minsky's implementation
+
+  q1,A
+  q1,A,>
+
+  q1,B
+  q1,B,>
+
+  q1,X
+  q1,X,>
+
+  q2,0
+  q2,0,>
+
+  q2,1
+  q2,1,>
+
+  q3,0
+  q3,0,<
+
+  q3,1
+  q3,1,<
+
+  q3,A
+  q3,A,<
+
+  q3,B
+  q3,B,<
+
+  q3,X
+  q3,X,<
+
+  q4,0
+  q4,0,>
+
+  q4,1
+  q4,1,>
+
+  q5,A
+  q5,A,>
+
+  q5,B
+  q5,B,>
+
+  q5,X
+  q5,X,>
+
+  q6,A
+  q6,A,<
+
+  q6,B
+  q6,B,<
+
+  q6,X
+  q6,X,<
+
+  q7,A
+  q7,A,>
+
+  q7,B
+  q7,B,>
+
+  q7,X
+  q7,X,>
+
+  q8,0
+  q8,0,<
+
+  q8,1
+  q8,1,<
+
+  q8,A
+  q8,A,<
+
+  q8,B
+  q8,B,<
+
+  q8,X
+  q8,X,<
+
+  q9,0
+  q9,0,<
+
+  q9,1
+  q9,1,<
+
+  q9,A
+  q9,A,<
+
+  q9,B
+  q9,B,<
+
+  q9,X
+  q9,X,<
+
+  q10,A
+  q10,A,>
+
+  q10,B
+  q10,B,>
+
+  q11,A
+  q11,A,>
+
+  q11,B
+  q11,B,>
+
+  q12,0
+  q12,0,>
+
+  q12,1
+  q12,1,>
+
+  q13,0
+  q13,0,<
+
+  q13,1
+  q13,1,<
+
+  q13,A
+  q13,A,<
+
+  q13,B
+  q13,B,<
+
+  q13,Y
+  q13,Y,<
+
+  q14,0
+  q14,0,<
+
+  q14,1
+  q14,1,<
+
+  q14,A
+  q14,A,<
+
+  q14,B
+  q14,B,<
+
+  q14,Y
+  q14,Y,<
+
+  q15,0
+  q15,0,>
+
+  q15,1
+  q15,1,>
+
+  q15,Y
+  q15,Y,>
+
+  q16,A
+  q16,A,>
+
+  q16,B
+  q16,B,>
+
+  q16,X
+  q16,X,>
+
+  q16,Y
+  q16,Y,>
+
+  q17,X
+  q17,X,<
+
+  q17,Y
+  q17,Y,<
+
+  q18,0
+  q18,0,>
+
+  q18,1
+  q18,1,>
+
+  q18,Y
+  q18,Y,>
+
+  q19,0
+  q19,0,>
+
+  q19,1
+  q19,1,>
+
+  q19,Y
+  q19,Y,>
+
+  q22,0
+  q22,0,<
+
+  q22,1
+  q22,1,<
+
+  q22,Y
+  q22,Y,<
+
+  q23,0
+  q23,0,<
+
+  q23,1
+  q23,1,<
+
+  q23,Y
+  q23,Y,<
+
+// dangerous transitions not mentioned in the diagram but implicitly being
+// part of Marvin Minsky's implementation
+
+  q7,Y
+  q7,Y,>
+
+  q8,S
+  q8,S,<
+
+  q9,S
+  q9,S,<
+
+  q10,S
+  q10,S,>
+
+  q11,S
+  q11,S,>
+
+  q12,S
+  q12,S,>
+
+  q13,S
+  q13,S,<
+
+  q14,X
+  q14,X,<
+
+  q14,S
+  q14,S,<
+
+  q16,S
+  q16,S,>
+
+  q17,S
+  q17,S,<
+
+  q18,A
+  q18,A,>
+
+  q18,B
+  q18,B,>
+
+  q18,X
+  q18,X,>
+
+  q19,A
+  q19,A,>
+
+  q19,B
+  q19,B,>
+
+  q19,X
+  q19,X,>
+
+  q20,A
+  q20,A,>
+
+  q20,B
+  q20,B,>
+
+  q20,S
+  q20,S,>
+
+  q20,X
+  q20,X,>
+
+  q20,Y
+  q20,Y,>
+
+  q21,A
+  q21,A,<
+
+  q21,S
+  q21,S,<
+
+  q21,B
+  q21,B,<
+
+  q21,X
+  q21,X,<
+
+  q21,Y
+  q21,Y,<

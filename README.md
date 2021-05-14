@@ -26,3 +26,9 @@ with a trivial example illustrating the operation of an UTM. This example may on
 containing the same UTM as above, but with a preamble, that places the read/write head at the required position in the presence of an attack (as described by Pontus Johnson)
 * attack.txt
 with the initial contents of the UTM's tape in order to run an attack. This example may only be run using "Marvin-Minsky-UTM_attackable.txt"
+
+Credits go to Martin Ugarte for his wonderful Turing Machine Simulator and to Pontus Johnson who found the mentioned vulnerability and developed a working attack (as the author of these lines here just ported that work to the simulator)
+
+## License ##
+
+[MIT License](LICENSE.md)
