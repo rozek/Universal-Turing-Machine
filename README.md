@@ -18,13 +18,13 @@ In the same way as in the original Python implementation, the port also differen
 
 This repository contains the following files
 
-* [Marvin-Minsky-UTM.txt](https://raw.githubusercontent.com/rozek/Universal-Turing-Machine/main/Marvin-Minsky-UTM.txt)<br>
+* [Marvin-Minsky-UTM.txt](Marvin-Minsky-UTM.txt)<br>
 containing a "program" prepared for the Turing Machine Simulator, which implements Marvin Minsky's UTM and may be used to simulate other TMs
-* [example.txt](https://raw.githubusercontent.com/rozek/Universal-Turing-Machine/main/example.txt)<br>
+* [example.txt](example.txt)<br>
 with a trivial example illustrating the operation of an UTM. This example may only be run using "Marvin-Minsky-UTM.txt"
-* [Marvin-Minsky-UTM_attackable.txt](https://raw.githubusercontent.com/rozek/Universal-Turing-Machine/main/Marvin-Minsky-UTM_attackable.txt)<br>
+* [Marvin-Minsky-UTM_attackable.txt](Marvin-Minsky-UTM_attackable.txt)<br>
 containing the same UTM as above, but with a preamble, that places the read/write head at the required position in the presence of an attack (as described by Pontus Johnson)
-* [attack.txt](https://raw.githubusercontent.com/rozek/Universal-Turing-Machine/main/attack.txt)<br>
+* [attack.txt](attack.txt)<br>
 with the initial contents of the UTM's tape in order to run an attack. This example may only be run using "Marvin-Minsky-UTM_attackable.txt"
 
 Credits go to Martin Ugarte for his wonderful Turing Machine Simulator and to Pontus Johnson who found the mentioned vulnerability and developed a successful attack (as the author of these lines here just ported that work to the simulator)
