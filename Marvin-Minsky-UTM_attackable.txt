@@ -399,11 +399,23 @@ accept: q0
 // dangerous transitions not mentioned in the diagram but implicitly being
 // part of Marvin Minsky's implementation
 
+  q2,M
+  q2,M,>
+
+  q3,M
+  q3,M,<
+
+  q6,M
+  q6,M,<
+
   q7,Y
   q7,Y,>
 
   q8,S
   q8,S,<
+
+  q9,M
+  q9,M,<
 
   q9,S
   q9,S,<
@@ -411,11 +423,17 @@ accept: q0
   q10,S
   q10,S,>
 
+  q11,M
+  q11,M,>
+
   q11,S
   q11,S,>
 
   q12,S
   q12,S,>
+
+  q13,X
+  q13,X,<
 
   q13,S
   q13,S,<
