@@ -22,6 +22,9 @@ This repository contains the following files
 containing a "program" prepared for the Turing Machine Simulator, which implements Marvin Minsky's UTM and may be used to simulate other TMs
 * [example.txt](example.txt)<br>
 with a trivial example illustrating the operation of an UTM. This example may only be run using "Marvin-Minsky-UTM.txt"
+* [binary-counter.txt](binary-counter.txt)<br>
+with another example for the UTM - namely the "binary counter" which is to
+be "attacked", i.e., superseded by a hack that simply erases the input tape
 * [Marvin-Minsky-UTM_attackable.txt](Marvin-Minsky-UTM_attackable.txt)<br>
 containing the same UTM as above, but with a preamble, that places the read/write head at the required position in the presence of an attack (as described by Pontus Johnson)
 * [attack.txt](attack.txt)<br>
