@@ -1,31 +1,63 @@
 name: Universal Turing Machine (by Marvin Minsky)
 // see https://github.com/intrinsic-propensity/turing-machine
-init: qPre
+init: p0
 accept: q0
 
-  qPre,0
-  qPre,0,>
+  p0,0
+  p0,0,>
 
-  qPre,1
-  qPre,1,>
+  p0,1
+  p0,1,>
 
-  qPre,A
-  qPre,A,>
+  p0,A
+  p0,A,>
 
-  qPre,B
-  qPre,B,>
+  p0,B
+  p0,B,>
 
-  qPre,M
-  qPre,M,>
+  p0,M
+  p0,M,>
 
-  qPre,S
-  qPre,S,>
+  p0,S
+  p0,S,>
 
-  qPre,Y
-  qPre,Y,>
+  p0,Y
+  p0,Y,>
 
-  qPre,X
+  p0,X
+  p0,X,>
+
+  p0,_
+  p1,_,<
+
+  p1,0
+  p1,0,<
+
+  p1,Y
+  p2,Y,<
+
+  p2,0
+  p2,0,<
+
+  p2,1
+  p2,1,<
+
+  p2,X
+  p2,X,<
+
+  p2,Y
+  p3,Y,>
+  
+  p3,0
+  p3,0,>
+
+  p3,1
+  p3,1,>
+
+  p3,X
   q6,X,<
+
+
 
 // transitions mentioned in the diagram
 
